@@ -5,11 +5,11 @@ const Background = ({ color }) => {
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
       <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="gggyrate-grad">
-          <stop stop-color={color} stop-opacity=".5" offset="0%"></stop>
-          <stop stop-color={color} stop-opacity="1" offset="100%"></stop>
+          <stop stopColor={color} stopOpacity=".5" offset="0%"></stop>
+          <stop stopColor={color} stopOpacity="1" offset="100%"></stop>
         </linearGradient>
       </defs>
-      <g stroke-width="3" stroke={color} fill="none">
+      <g strokeWidth="3" stroke={color} fill="none">
         <path
           d="M399.9999694824219 -36.4761962890625L777.9999936363779 181.76190116403137V618.2380960702191L399.9999694824219 836.476193523313L21.9999453284658 618.2380960702191V181.76190116403137L399.9999694824219 -36.4761962890625Z "
           transform="rotate(0, 400, 400)"
