@@ -1,0 +1,95 @@
+.mainWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.orbit ul {
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  list-style: none;
+
+  transform-origin: center;
+  animation: orbit var(--speed) linear infinite;
+}
+
+.orbit li {
+  position: absolute;
+  width: 6rem;
+  aspect-ratio: 1/1;
+  border-radius: 30px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+.orbit li img {
+  max-width: 140px;
+}
+
+.orbit li > * {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+}
+
+.imageContainer,
+.centerImage {
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+  background: var(--primaryColor);
+  box-shadow: 0 4px 10px var(--shadowColor), 0 8px 16px var(--shadowColor),
+    0 16px 24px var(--shadowColor);
+}
+.center-image {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 10px;
+  background: var(--primaryColor);
+  box-shadow: 0 20px 20px var(--shadowColor), 0 8px 30px var(--shadowColor),
+    0 16px 24px var(--shadowColor);
+  border-radius: 30px;
+}
+
+.center-image img {
+  width: 5rem;
+  object-fit: cover;
+  object-position: center;
+}
