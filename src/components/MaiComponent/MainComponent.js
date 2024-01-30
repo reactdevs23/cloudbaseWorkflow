@@ -9,7 +9,7 @@ const MainComponent = ({ images, centerImage, background }) => {
     return { x, y };
   };
 
-  let wrapperSize = 650; // Set the desired size of the circular wrapper
+  let wrapperSize = 550; // Set the desired size of the circular wrapper
   const radius = wrapperSize / 2;
 
   const renderImages = (imagesToRender, isSecondSet) => {

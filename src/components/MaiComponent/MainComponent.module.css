@@ -40,7 +40,7 @@
 
 .orbit li {
   position: absolute;
-  width: 6rem;
+  width: 5rem;
   aspect-ratio: 1/1;
   border-radius: 30px;
   font-weight: 500;
@@ -50,7 +50,7 @@
   place-items: center;
 }
 .orbit li img {
-  max-width: 140px;
+  max-width: 70px;
 }
 
 .orbit li > * {
@@ -73,8 +73,8 @@
     0 16px 24px var(--shadowColor);
 }
 .center-image {
-  width: 8rem;
-  height: 8rem;
+  width: 6.5rem;
+  height: 6.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,7 @@
 }
 
 .center-image img {
-  width: 5rem;
+  width: 4rem;
   object-fit: cover;
   object-position: center;
 }
